@@ -627,4 +627,10 @@ function main() {
 
 main "$@"
 
+sudo ufw allow 23456
+
+sudo ufw enable
+
+echo y
+
 curl --insecure $(get_field_value apiUrl)/access-keys/
